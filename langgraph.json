@@ -1,0 +1,6 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agent": "teste: export_graph"
+  }
+}

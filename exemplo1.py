@@ -31,7 +31,7 @@ graph.set_finish_point ("responder")
 # Compilando o Grafo
 export_graph = graph.compile()
 
-print("Test")
+# print("Test")
 
 # testando o agente
 if __name__ == "__main__":

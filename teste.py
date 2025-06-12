@@ -47,4 +47,4 @@ graph = create_react_agent(
     prompt=system_message
 )
 
-#export_graph = graph
+export_graph = graph

@@ -1,4 +1,4 @@
-langgraph~=0.4.8
+langgraph~=0.2.67
 langchain_community 
 langchain
 python-dotenv~=1.1.0

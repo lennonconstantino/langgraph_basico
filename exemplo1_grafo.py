@@ -2,6 +2,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 from langgraph.graph import StateGraph
 from pydantic import BaseModel
+from langchain_core.runnables.graph import MermaidDrawMethod
 from dotenv import load_dotenv
 import os
 
@@ -31,9 +32,10 @@ graph.set_finish_point ("responder")
 # Compilando o Grafo
 export_graph = graph.compile()
 
-print("Test")
+# Gerando a imagen PNG do Grafo
+png_bytes = export_graph.get_graph().draw_mermaid_png(
+    draw_method=MermaidDrawMethod.API
+)
 
-# testando o agente
-if __name__ == "__main__":
-    result = export_graph.invoke(GraphState(input="Quem descobriu a América", output=""))
-    print(result)
+with open ("grafo_exemplo1.png", "wb") as f:
+    f.write(png_bytes)

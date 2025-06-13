@@ -1,8 +1,8 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "agent": "teste:export_graph"
+    "agent": "./teste.py:export_graph"
   },
-  "python-version": "3.11",
+  "python_version": "3.11",
   "env": ".env"
 }

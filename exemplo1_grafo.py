@@ -26,8 +26,8 @@ def responder(state):
 # criando o graph
 graph = StateGraph(GraphState)
 graph.add_node("responder", responder)
-graph.set_entry_point ("responder")
-graph.set_finish_point ("responder")
+graph.set_entry_point("responder")
+graph.set_finish_point("responder")
 
 # Compilando o Grafo
 export_graph = graph.compile()

@@ -1,8 +1,7 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "agent": "./teste.py:export_graph"
-  },
-  "python_version": "3.11",
-  "env": ".env"
+    "agent": "./teste.py:export_graph",
+    "mcp": "./exemplo4.py:agent_mcp"
+  }
 }
